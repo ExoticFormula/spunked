@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    background-color: #F0F0F0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.indexbannerdiv{
+    height: 200px;
+    width: 100%;
+background-size: cover;
+
+ 
+    background-image: url("../img/indexbanner.jpg");
+}
+
+.navtop{
+    display: flex;
+  justify-content: center;
+  height: 50px;
+  padding: 28px;
+  background-color: white;
+
+  align-items: center;
+
+
+
+}
+
+.navtopright{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.btn{
+    background-color: red;
+    padding: 10px;
+border-radius: 5px;
+width: 120px;
+height: 40px;
+}
+
+.btn.uploadbtn:hover{
+    background-color: rgb(255, 130, 0);
+}
+.btn.loginbtn{
+    width: 150px;
+    
+}
+.logodiv{
+    margin-right: 30px;
+}
+.navtoplist{
+    display: flex;
+list-style-type: none;
+
+flex-direction: row;
+gap: 37px;
+
+
+}
+.navtoplist.btnnav{
+
+gap: 20px;
+
+
+}
+.uploadimg{
+    height: 15px;
+
+}
+.navtopfull{
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+.logo{
+    height: 100px;
+    margin-top: 8px;
+
+}
+
+.btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+}
+
+
+.navtoplistitem{
+    text-decoration: none;
+    color: #353535;
+    font-size: 16px;
+font-weight: 550;
+
+font-family: 'Roboto', sans-serif;
+
+}
+
+.navbottom{
+    height: 38px;
+    background-color: #353535;
+}
