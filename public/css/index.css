@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 
 body{
     background-color: #F0F0F0;
@@ -23,7 +22,7 @@ background-size: cover;
 .navtop{
     display: flex;
   justify-content: center;
-  height: 50px;
+  height: 60px;
   padding: 28px;
   background-color: white;
 
@@ -66,6 +65,14 @@ gap: 37px;
 
 
 }
+li:nth-child(1) {
+    list-style-type: none; 
+ }
+.navbottomlist{
+    display: flex;
+    color: #555454;;
+
+}
 .navtoplist.btnnav{
 
 gap: 20px;
@@ -105,13 +112,31 @@ gap: 20px;
     text-decoration: none;
     color: #353535;
     font-size: 16px;
-font-weight: 550;
+font-weight: 500;
 
 font-family: 'Roboto', sans-serif;
 
 }
+.navbottomlistitem{
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+font-weight: 500;
+
+font-family: 'Roboto', sans-serif;
+}
 
 .navbottom{
-    height: 38px;
+    height: 40px;
+    display: flex;
+    align-items: center;
     background-color: #353535;
+    
+}
+
+.navbottomlist{
+    display: flex;
+    gap: 50px;
+    margin-left: 510px;
+  
 }
