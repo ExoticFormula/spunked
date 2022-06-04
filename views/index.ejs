@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/index.css">
+    <script src="https://kit.fontawesome.com/bdf4e7606c.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -70,6 +71,49 @@
     </li>
     
     </ul>
+
+
+
+
+   </div>
+   <div class="posts-div">
+
+       <%  for(let i=0;i < posts.length;i++){ %>
+      
+        <div class="posts-card">
+            <% let currentposturl=posts[i].thumburl  %>
+         <div style="background-image:url( <%= currentposturl   %>);" class="thumbnail"> 
+
+         </div>
+        <div class="post-content">
+            
+            <h1><%= posts[i].title %></h1>
+         
+            <span>NATURE</span>
+            <p><%= posts[i].content %></p>
+        </div>
+        <hr>
+        <div class="reach-details">
+<div class="social">
+    <a class="sharebtn" href="#">
+      
+        <i class="fa-brands fa-facebook-square fbicon"></i>
+        <span>Share</span>
+    </a>
+     <i class="fa-solid fa-comments commenticon"></i> 
+    
+    
+</div>
+<div class="upvotes-div">
+    <i class="fa-solid fa-circle-up voteicon"></i>
+    <i class="fa-solid fa-circle-down voteicon"></i>
+<span class="votecount"><%= posts[i].upvotes %></span>
+</div>
+        </div>
+        </div>
+
+     <%  } %>
+     
    </div>
 </body>
 </html>
